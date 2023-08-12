@@ -1,7 +1,10 @@
 package objects.bankGo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Exchange {
-    public int r030;
+    @JsonProperty("r030")
+    public int vitaly;
 
     public String txt;
     public double rate;
