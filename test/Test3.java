@@ -23,7 +23,7 @@ public class Test3 {
     public void test2(){
         for (Exchange l: exchange){
             System.out.println(l.cc);
-            System.out.println(l.exchangedate + " = " + l.rate);
+            System.out.println(l.exchangedate + " = " + l.vitaly);
         }
     }
 }
