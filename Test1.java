@@ -38,5 +38,11 @@ public class Test1 {
         System.out.println(jsonObject.toString());
         System.out.println(("RATE = "+jsonObject.getDouble("rate")));
     }
+
+    @Test
+    public void test6(){
+        System.out.println("RATE = "+new JSONArray(getRest("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json")).getJSONObject(24).getDouble("rate"));
+
+    }
 }
 
